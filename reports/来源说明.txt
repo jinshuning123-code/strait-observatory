@@ -1,0 +1,12 @@
+核读与访问日期：2026-10-29
+ReCAAP_Q1_2026.pdf：54页，Taz条目在PDF第45页。
+https://www.recaap.org/resources/ck/files/reports/quarterly/ReCAAP%20ISC%201st%20Quarter%20Report%202026.pdf
+ReCAAP_2025_release.pdf：5页，2025年SOMS月度图在第2页。
+https://www.recaap.org/resources/ck/files/news/2026/Press%20release%20-%20ReCAAP%20ISC%20annual%20report%20%282025%29%20-FINAL.pdf
+IMO 2026年3月月报：线上核读，第1页第4项Hellasship、第2页第5项Taz。未保存完整本地附件。
+https://wwwcdn.imo.org/localresources/en/OurWork/Security/Documents/Piracy%20monthly%20report%20fo%20March%202026.pdf
+研究卡与统计说明见analysis.js；自动统计见build_analysis.py。上述下载附件是公开原报告，不是小组原创内容。
+
+2026-10-29新增 ReCAAP_HYR_2026.pdf：72页，已核对PDF第55页Taz S/N11；IMO号9703825，日期27/2/26。来源：https://www.recaap.org/resources/ck/files/reports/half-year/ReCAAP%20ISC%20Half%20Yearly%20Report%202026.pdf
+
+IMB_Q1_2026.pdf：2026-10-29访问归档，34页。Taz在PDF第31页、印刷第26页第7项。出版者ICC-IMB，托管者Japan P&I，不能将托管机构算作独立信源。日期26.02.2026 1830 UTC。URL https://www.piclub.or.jp/wp-content/uploads/2026/04/No.1367_IMB-piracy-and-armed-robbery-report-for-January-March-2026.pdf

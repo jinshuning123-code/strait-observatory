@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><script src="public-data/catalog.js"></script><script src="public-site.js"></script><link rel="stylesheet" href="public-site.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>事件重建报告 · 海峡观察</title>
+  <link rel="stylesheet" href="reconstruction-report.css?v=20261109">
+</head>
+<body>
+  <header class="report-nav"><a href="dashboard.html">海峡观察 / 工作台</a><nav><a id="compare-link" href="research.html">对照报告</a><a id="ai-link" href="event-ai.html">AI问答与纠错</a></nav></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">从不同记载中提出有依据的事件解释</p>
+      <h1>事件重建报告</h1>
+      <p>选择一条事件，让AI比较已有报告，整理最有依据的经过。每项内容都列出出处、推断前提和仍需查明的问题。</p>
+    </section>
+    <form id="generate-form" class="generation">
+      <div class="generation-fields">
+        <label>选择事件<select id="event-choice" required></select></label>
+        <label>这次还想重点查什么？<textarea id="focus" maxlength="1000" rows="2" placeholder="例如：三个日期是否涉及同一次事件？请解释时区假设和报送关系。"></textarea></label>
+      </div>
+      <div class="generation-action"><button id="generate" type="submit" disabled>根据这些材料生成重建报告（API计费）</button><p id="connection" class="muted" role="status">正在读取连接状态…</p></div>
+      <p id="generation-status" role="status" aria-live="polite"></p>
+      <details class="material-preview"><summary id="package-summary">查看将提供给AI的材料</summary><div id="package-sources"></div></details>
+    </form>
+    <div class="reading-layout">
+      <article id="report-area" class="report-paper" aria-label="事件重建报告">
+        <div class="empty-state"><h2>先查看材料，或打开一份已有报告</h2><p>生成结果将按“报告记载”“分析推断”“待查信息”标注。已有报告可以直接打开，也可以下载用于汇报。</p></div>
+      </article>
+      <aside class="reading-side">
+        <section><h2>已保存的重建报告</h2><button id="refresh-history" type="button" class="secondary">刷新列表</button><div id="history" role="status"></div></section>
+        <section id="used-materials" hidden><h2>本次使用的材料</h2><p class="muted">点击报告中的编号，查看这次保存的文字与出处。</p><div id="run-sources"></div></section>
+      </aside>
+    </div>
+    <section id="review-area" class="review-area" hidden>
+      <h2>人工核对与修改意见</h2><div id="reviews"></div>
+      <form id="review-form">
+        <div class="review-fields"><label>核对人<input name="reviewer" required maxlength="100"></label><label>核对状态<select name="status"><option>待复核</option><option>需修订</option><option>已复核</option></select></label></div>
+        <label>核对了哪些内容？依据在哪？<textarea name="note" required rows="3" maxlength="8000"></textarea></label>
+        <label>需要修改的原句、修改结果和依据<textarea name="correction" rows="3" maxlength="8000" placeholder="引用材料编号，说明为什么需要修改。"></textarea></label>
+        <button id="save-review" type="submit">保存核对意见</button><p id="review-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>海峡观察 · 公开材料事件研究 · AI输出以草稿保存，供人工核对和继续补证</footer>
+  <script src="reconstruction-report.js?v=20261109"></script>
+</body>
+</html>
